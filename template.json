@@ -1,0 +1,18 @@
+{
+    "builders": [
+        {
+            "type": "digitalocean",
+            "api_token": "82caaa6f1df396e2edb7e5440787c5c3dee42e020391bc3c56f6044d05769f21",
+            "image": "ubuntu-12-04-x64",
+            "region": "nyc2",
+            "snapshot_name" : "example{{isotime}}",
+            "size": "512mb"
+        }
+    ],
+    "provisioners" : [
+        {
+            "type": "shell",
+            "script": "script.sh"
+        }
+    ]
+}
