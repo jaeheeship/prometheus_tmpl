@@ -2,10 +2,10 @@
     "builders": [
         {
             "type": "digitalocean",
-            "api_token": "82caaa6f1df396e2edb7e5440787c5c3dee42e020391bc3c56f6044d05769f21",
+            "api_token": "{{APITOKEN}}",
             "image": "ubuntu-12-04-x64",
             "region": "nyc2",
-            "snapshot_name" : "example{{isotime}}",
+            "snapshot_name" : "prometheus{{isotime}}",
             "size": "512mb"
         }
     ],
